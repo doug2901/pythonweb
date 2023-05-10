@@ -1,3 +1,7 @@
+def branchName = "${env.BRANCH_NAME}"
+if(branchName == 'main'){
+  ...
+}
 pipeline {
   environment {
     registry = "doug2901/pywebapp"
